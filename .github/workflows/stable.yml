@@ -148,19 +148,19 @@ jobs:
         needs: [build-linux, build-mac, build-windows, build-windowsOnARM]
 
         steps:
-            - uses: actions/download-artifact@v2
+            - uses: actions/download-artifact@v4
               with:
                   name: ZelcordMac
                   path: macos
-            - uses: actions/download-artifact@v2
+            - uses: actions/download-artifact@v4
               with:
                   name: ZelcordWindows
                   path: windows
-            - uses: actions/download-artifact@v2
+            - uses: actions/download-artifact@v4
               with:
                   name: ZelcordWindowsArm64
                   path: windows
-            - uses: actions/download-artifact@v2
+            - uses: actions/download-artifact@v4
               with:
                   name: ZelcordLinux
                   path: linux

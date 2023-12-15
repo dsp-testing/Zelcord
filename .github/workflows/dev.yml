@@ -182,26 +182,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ZelcordMac.zip
           path: macos
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ZelcordWindows.zip
           path: windows
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ZelcordLinux.zip
           path: linux
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ZelcordLinuxArm64.zip
           path: linux
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ZelcordWindowsArm64.zip
           path: windows
